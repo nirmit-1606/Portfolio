@@ -146,6 +146,10 @@ section {
     font-size: 1.2rem;
 }
 
+.intro-text:hover {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="24" font-size="24">🖌️</text></svg>') 0 16, auto;
+}
+
 /* Services Section */
 .services {
     padding: 2rem 0;
@@ -332,4 +336,9 @@ footer .contact a {
 
 html {
     scroll-behavior: smooth;
+}
+
+::selection {
+    background: rgba(255, 204, 0, 0.8);
+    color: #333;
 }
