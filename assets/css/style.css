@@ -22,8 +22,7 @@ header {
 }
 
 header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    display: flex;
 }
 
 nav ul {
@@ -77,6 +76,7 @@ main {
     padding: 0.75rem;
     font-weight: bold;
     background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
 }
 
 .about p {
