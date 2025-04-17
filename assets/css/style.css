@@ -68,6 +68,136 @@ main {
     min-width: 60%;
 }
 
+section {
+    padding: 2rem 0;
+    scroll-margin-top: 92px;
+}
+
+/* Welcome Section */
+.welcome {
+    padding: 8rem 0;
+}
+
+.welcome-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-token {
+    width: 150px;
+    height: 150px;
+    perspective: 1000px;
+}
+
+.flip-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.flip-card-front img,
+.flip-card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.intro-text {
+    max-width: 500px;
+    text-align: center;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+}
+
+.intro-text:hover {
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="24" font-size="24">🖌️</text></svg>') 0 16, auto;
+}
+
+/* Services Section */
+.services {
+    padding: 2rem 0;
+}
+
+.service-icon {
+    font-size: 1.5rem;
+    color: #ff6600;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #222;
+}
+
+.service-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
 aside.page-nav {
     min-width: 200px;
     position: sticky;
@@ -91,10 +221,13 @@ aside.page-nav a {
     transition: color 0.3s;
 }
 
-aside.page-nav a.active,
-aside.page-nav a:hover {
+aside.page-nav a.active {
     color: #ff6600;
-    font-weight: bold;
+    /* font-weight: bold; */
+}
+
+aside.page-nav a:hover {
+    text-decoration: underline;
 }
 
 .projects .project-grid {
@@ -116,7 +249,8 @@ aside.page-nav a:hover {
 
 .project-card img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     display: block;
 }
 
@@ -148,4 +282,63 @@ footer .contact a {
     color: #ffcc00;
     text-decoration: none;
     margin: 0 0.5rem;
+}
+
+/* Mobile Navigation */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+#nav-menu {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #222;
+        padding: 1rem 0;
+    }
+
+    #nav-menu.open {
+        display: flex;
+    }
+
+    #nav-menu ul {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+        padding-left: 2rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    aside.page-nav {
+        display: none;
+    }
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: rgba(255, 204, 0, 0.8);
+    color: #333;
 }

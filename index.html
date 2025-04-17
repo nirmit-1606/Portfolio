@@ -6,14 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <title>Nirmit Patel | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
   <div class="header container">
     <header>
-      <div class="logo"><img src="assets/images/logo-white.svg" alt="Nirmit's logo" height="60em"></div>
-      <nav>
+      <div class="logo">
+        <img src="assets/images/logo-white.svg" alt="Nirmit's logo" height="60em">
+      </div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <nav id="nav-menu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
@@ -24,6 +28,57 @@
 
   <div class="container">
     <main>
+
+      <!-- Welcome Section -->
+      <section id="welcome" class="welcome">
+        <div class="welcome-content">
+          <div class="image-token">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="assets/images/nirmit-front.png" alt="Nirmit's portrait">
+                </div>
+                <div class="flip-card-back">
+                  <img src="assets/images/nirmit-back.png" alt="Nirmit's ghibli image">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="intro-text">
+            <h1>Hi there, I'm Nirmit 👋</h1>
+            <p>I’m a UX Designer, Frontend Developer, and Creative Technologist passionate about crafting intuitive and
+              visually engaging digital experiences.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Offered -->
+      <section id="services" class="services">
+        <h2>What I Do</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <i class="fas fa-pencil-ruler service-icon"></i>
+            <h3>UX Design</h3>
+            <p>Wireframes, user flows, interactive prototypes, and usability testing to craft intuitive digital
+              experiences.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-code service-icon"></i>
+            <h3>Frontend Development</h3>
+            <p>Building responsive, accessible, and user-friendly websites using HTML, CSS, JavaScript, and modern
+              frameworks.</p>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-paint-brush service-icon"></i>
+            <h3>Graphic Design</h3>
+            <p>Creating visually engaging UI, branding assets, and digital illustrations to support strong storytelling.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- My work Section -->
       <section id="my-work" class="projects">
         <h1>My Work</h1>
         <div class="project-grid">
@@ -45,15 +100,47 @@
           </a>
         </div>
       </section>
+
+      <!-- Design Experiments -->
+      <section id="design-experiments" class="projects">
+        <h2>Design Experiments</h2>
+        <p>Explorations in motion, microinteractions, and layout through rapid prototyping.</p>
+        <div class="project-grid">
+          <!-- Add your design experiment project cards here -->
+        </div>
+      </section>
+
+      <!-- Computer Graphics Projects -->
+      <section id="graphics-projects" class="projects">
+        <h2>Graphics & Simulation</h2>
+        <p>Interactive visuals and 3D scenes from my Computer Graphics coursework.</p>
+        <div class="project-grid">
+          <!-- Add your graphics project cards here -->
+        </div>
+      </section>
+
+      <!-- Art & Illustrations -->
+      <section id="artwork" class="projects">
+        <h2>Art & Illustrations</h2>
+        <p>A glimpse into my visual storytelling and creative expressions.</p>
+        <div class="project-grid">
+          <!-- Add your artwork project cards here -->
+        </div>
+      </section>
+
     </main>
 
     <aside class="page-nav">
-      
       <ul>
-        <li><a href="#my-work" class="active">My Work</a></li>
-        <!-- Future sections -->
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#my-work">My Work</a></li>
+        <li><a href="#design-experiments">Design Experiments</a></li>
+        <li><a href="#graphics-projects">Graphics & Simulation</a></li>
+        <li><a href="#artwork">Art & Illustrations</a></li>
       </ul>
     </aside>
+
   </div>
 
   <footer>
