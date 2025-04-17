@@ -13,17 +13,16 @@ body {
 }
 
 header {
-    background-color: #222;
-    color: white;
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
+    display: flex;
 }
 
 nav ul {
@@ -42,8 +41,60 @@ nav a:hover {
     color: #ffcc00;
 }
 
-main {
+.container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.header {
+    display: block;
+    background-color: #222;
+    color: white;
+    position: sticky;
+    top: 0px;
+    max-width: inherit;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+}
+
+/* Main and Aside */
+main {
+    flex: 1;
+    min-width: 60%;
+}
+
+aside.page-nav {
+    min-width: 200px;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+}
+
+aside.page-nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+aside.page-nav li {
+    margin-bottom: 0.5rem;
+}
+
+aside.page-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+aside.page-nav a.active,
+aside.page-nav a:hover {
+    color: #ff6600;
+    font-weight: bold;
 }
 
 .projects .project-grid {
@@ -77,6 +128,7 @@ main {
     padding: 0.75rem;
     font-weight: bold;
     background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
 }
 
 .about p {

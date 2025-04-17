@@ -1,2 +1,12 @@
-// You can add interactivity here later if needed
-console.log("Portfolio site loaded.");
+document.addEventListener("scroll", () => {
+    const section = document.getElementById("my-work");
+    const link = document.querySelector('aside.page-nav a[href="#my-work"]');
+  
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= 150 && rect.bottom >= 150) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
+  
