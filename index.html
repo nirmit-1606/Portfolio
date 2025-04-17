@@ -10,39 +10,51 @@
 </head>
 
 <body>
-  <header>
-    <div class="logo"><img src="assets/images/logo-white.svg" alt="Nirmit's logo" height="60em"></div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="header container">
+    <header>
+      <div class="logo"><img src="assets/images/logo-white.svg" alt="Nirmit's logo" height="60em"></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 
-  <main>
-    <section class="projects">
-      <h1>My Work</h1>
-      <div class="project-grid">
-        <a href="#" class="project-card">
-          <img src="assets/images/TutorReserve.png" alt="UX Case Study">
-          <div class="card-title">UX App Design: TutorReserve</div>
-        </a>
-        <a href="#" class="project-card">
-          <img src="assets/images/SmartPlate.png" alt="UX Case Study">
-          <div class="card-title">Mobile App Design: SmartPlate</div>
-        </a>
-        <a href="#" class="project-card">
-          <img src="assets/images/CampingSupplies.png" alt="UX Case Study">
-          <div class="card-title">UX Research: Camping Supplies Store</div>
-        </a>
-        <a href="#" class="project-card">
-          <img src="assets/images/EmpDirectory.png" alt="Employee Directory">
-          <div class="card-title">Employee Directory App</div>
-        </a>
-      </div>
-    </section>
-  </main>
+  <div class="container">
+    <main>
+      <section id="my-work" class="projects">
+        <h1>My Work</h1>
+        <div class="project-grid">
+          <a href="#" class="project-card">
+            <img src="assets/images/TutorReserve.png" alt="UX Case Study">
+            <div class="card-title">UX App Design: TutorReserve</div>
+          </a>
+          <a href="#" class="project-card">
+            <img src="assets/images/SmartPlate.png" alt="UX Case Study">
+            <div class="card-title">Mobile App Design: SmartPlate</div>
+          </a>
+          <a href="#" class="project-card">
+            <img src="assets/images/CampingSupplies.png" alt="UX Case Study">
+            <div class="card-title">UX Research: Camping Supplies Store</div>
+          </a>
+          <a href="#" class="project-card">
+            <img src="assets/images/EmpDirectory.png" alt="Employee Directory">
+            <div class="card-title">Employee Directory App</div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <aside class="page-nav">
+      
+      <ul>
+        <li><a href="#my-work" class="active">My Work</a></li>
+        <!-- Future sections -->
+      </ul>
+    </aside>
+  </div>
 
   <footer>
     <p>© 2025 Nirmit Patel</p>
