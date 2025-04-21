@@ -71,6 +71,7 @@ main {
 section {
     padding: 2rem 0;
     scroll-margin-top: 92px;
+    margin: 4rem 0;
 }
 
 /* Welcome Section */
@@ -95,7 +96,24 @@ section {
 .flip-card {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
     position: relative;
+    background-color: rgba(255, 204, 0, 0.5);
+    animation: glow-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+    0% {
+        box-shadow: 0 0 0px rgba(255, 204, 0, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(255, 204, 0, 0.9), 0 0 40px rgba(255, 204, 0, 0.6);
+    }
+
+    100% {
+        box-shadow: 0 0 0px rgba(255, 204, 0, 0.5);
+    }
 }
 
 .flip-card-inner {
@@ -154,6 +172,46 @@ section {
     cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32"><text y="24" font-size="24">🖌️</text></svg>') 0 16, auto;
 }
 
+.welcome-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60vh;
+}
+
+.scroll-arrow {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    animation: bounce 2s infinite;
+}
+
+.scroll-arrow span {
+    font-size: 2rem;
+    display: inline-block;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-20px);
+        opacity: 0.1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 /* Services Section */
 .services {
     padding: 2rem 0;
@@ -164,11 +222,6 @@ section {
     color: #ff6600;
     margin-bottom: 1rem;
     display: inline-block;
-}
-
-.services h2 {
-    text-align: center;
-    margin-bottom: 2rem;
 }
 
 .services-grid {
@@ -200,6 +253,12 @@ section {
 .service-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+section h1,
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 aside.page-nav {
@@ -330,6 +389,10 @@ footer .contact a {
 
     .container {
         flex-direction: column;
+    }
+
+    .welcome {
+        padding: 2rem 0;
     }
 
     aside.page-nav {
