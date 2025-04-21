@@ -76,7 +76,7 @@ section {
 
 /* Welcome Section */
 .welcome {
-    padding: 8rem 0;
+    padding: 8rem 0 1rem 0;
 }
 
 .welcome-content {
@@ -326,6 +326,32 @@ aside.page-nav a:hover {
     font-weight: bold;
     background-color: #f4f4f4;
     border-top: 1px solid #ddd;
+}
+
+.arts .art-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.art-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    transition: transform 0.2s;
+}
+
+.art-card img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    display: block;
+}
+
+.art-card:hover {
+    transform: scale(1.03);
 }
 
 .about p {
