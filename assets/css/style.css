@@ -395,6 +395,11 @@ footer .contact a {
         padding: 2rem 0;
     }
 
+    section {
+        padding: 2rem 0;
+        margin: 0;
+    }
+
     aside.page-nav {
         display: none;
     }
