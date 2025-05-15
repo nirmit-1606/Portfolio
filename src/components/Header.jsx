@@ -1,9 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import logo from '../assets/images/logo-white.svg';
 import { useEffect, useState } from 'react';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const toggle = document.getElementById('menu-toggle');
@@ -36,8 +37,22 @@ export default function Header() {
         </div>
         <nav id="nav-menu">
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About Me</Link></li>
+            <li>
+              <Link
+                to="/"
+                style={{ textDecoration: location.pathname === '/' ? 'underline' : 'none' }}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/about"
+                style={{ textDecoration: location.pathname === '/about' ? 'underline' : 'none' }}
+              >
+                About Me
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>
