@@ -1,6 +1,6 @@
-export default function ProjectGrid({ title, projects, isArt }) {
+export default function ProjectGrid({ id, title, projects, isArt }) {
   return (
-    <section className={isArt ? 'arts' : 'projects'}>
+    <section id={id} className={isArt ? 'arts' : 'projects'}>
       <h2>{title}</h2>
       <div className={isArt ? 'art-grid' : 'project-grid'}>
         {projects.map((proj, idx) => (

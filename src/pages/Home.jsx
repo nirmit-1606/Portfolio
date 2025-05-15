@@ -93,10 +93,10 @@ export default function Home() {
           </div>
         </section>
 
-        <ProjectGrid title="My Work" projects={workProjects} />
-        <ProjectGrid title="Design Experiments" projects={designExperiments} />
-        <ProjectGrid title="Graphics & Simulation" projects={graphicsProjects} />
-        <ProjectGrid title="Art & Illustrations" projects={artIllustrations} isArt />
+        <ProjectGrid id="my-work" title="My Work" projects={workProjects} />
+        <ProjectGrid id="design-experiments" title="Design Experiments" projects={designExperiments} />
+        <ProjectGrid id="graphics-projects" title="Graphics & Simulation" projects={graphicsProjects} />
+        <ProjectGrid id="artwork" title="Art & Illustrations" projects={artIllustrations} isArt />
       </main>
       <SidebarNav />
     </div>
