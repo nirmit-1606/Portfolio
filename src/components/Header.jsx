@@ -26,6 +26,14 @@ export default function Header() {
     };
   }, []);
 
+  const handleLinkClick = () => {
+    const menu = document.getElementById('nav-menu');
+    if (menu && menu.classList.contains('open')) {
+      menu.classList.remove('open');
+      setMenuOpen(false);
+    }
+  };
+
   return (
     <div className="header container">
       <header>
@@ -40,6 +48,7 @@ export default function Header() {
             <li>
               <Link
                 to="/"
+                onClick={handleLinkClick}
                 style={{ textDecoration: location.pathname === '/' ? 'underline' : 'none' }}
               >
                 Home
@@ -48,6 +57,7 @@ export default function Header() {
             <li>
               <Link
                 to="/about"
+                onClick={handleLinkClick}
                 style={{ textDecoration: location.pathname === '/about' ? 'underline' : 'none' }}
               >
                 About Me
