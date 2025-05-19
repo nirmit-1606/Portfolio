@@ -6,6 +6,7 @@ This is a personal portfolio website built with **React.js**. It showcases my wo
 
 ## 📁 Project Structure
 
+```
 src/
 ├── components/        # Reusable components like Header, Footer, SidebarNav
 ├── pages/             # Page components like Home, About
@@ -13,6 +14,7 @@ src/
 ├── styles/            # CSS files split by layout, component, and page
 ├── App.jsx            # Main app routes and structure
 └── index.js           # React DOM entry
+```
 
 ---
 
@@ -67,4 +69,5 @@ This project is open-source and free to use. Feel free to customize it to your n
 ## 👋 Contact
 
 Created by [Nirmit Patel](mailto:nirmitpatel1606@gmail.com)
+
 [LinkedIn](https://www.linkedin.com/in/nirmitpatel16/)
