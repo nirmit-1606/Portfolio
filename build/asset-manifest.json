@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.34bdafe5.css",
-    "main.js": "/Portfolio/static/js/main.26b86ad6.js",
+    "main.js": "/Portfolio/static/js/main.d24075ab.js",
     "static/media/nirmit-back.png": "/Portfolio/static/media/nirmit-back.4afdbbc07ee712f10654.png",
     "static/media/nirmit-front.png": "/Portfolio/static/media/nirmit-front.a0676b54e8f807710682.png",
     "static/media/SmartPlate.png": "/Portfolio/static/media/SmartPlate.fd65c76d8d6540f6135e.png",
@@ -24,10 +24,10 @@
     "static/media/logo-white.svg": "/Portfolio/static/media/logo-white.1398359ffa4a05276b72b7194d7efd00.svg",
     "index.html": "/Portfolio/index.html",
     "main.34bdafe5.css.map": "/Portfolio/static/css/main.34bdafe5.css.map",
-    "main.26b86ad6.js.map": "/Portfolio/static/js/main.26b86ad6.js.map"
+    "main.d24075ab.js.map": "/Portfolio/static/js/main.d24075ab.js.map"
   },
   "entrypoints": [
     "static/css/main.34bdafe5.css",
-    "static/js/main.26b86ad6.js"
+    "static/js/main.d24075ab.js"
   ]
 }
