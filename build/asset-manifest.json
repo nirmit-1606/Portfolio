@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.34bdafe5.css",
+    "main.js": "/Portfolio/static/js/main.26b86ad6.js",
+    "static/media/nirmit-back.png": "/Portfolio/static/media/nirmit-back.4afdbbc07ee712f10654.png",
+    "static/media/nirmit-front.png": "/Portfolio/static/media/nirmit-front.a0676b54e8f807710682.png",
+    "static/media/SmartPlate.png": "/Portfolio/static/media/SmartPlate.fd65c76d8d6540f6135e.png",
+    "static/media/CampingSupplies.png": "/Portfolio/static/media/CampingSupplies.bb5f5c3c599a6f6ca80b.png",
+    "static/media/CubeMapBumpMap.png": "/Portfolio/static/media/CubeMapBumpMap.f02d738ba14c2c886911.png",
+    "static/media/paint_feather.jpg": "/Portfolio/static/media/paint_feather.88e0e81ec7f38ae1cc95.jpg",
+    "static/media/card-2.jpg": "/Portfolio/static/media/card-2.308f3fbcdb1425326336.jpg",
+    "static/media/nav-mockup.jpg": "/Portfolio/static/media/nav-mockup.198a06c7e295604f3ee8.jpg",
+    "static/media/card-1.jpg": "/Portfolio/static/media/card-1.4dd1fc5dc6d78b363546.jpg",
+    "static/media/paint_ocean.jpg": "/Portfolio/static/media/paint_ocean.bd1a964831f8efa5ce20.jpg",
+    "static/media/TutorReserve.png": "/Portfolio/static/media/TutorReserve.934d4976f74c220f5c64.png",
+    "static/media/paint_dancer.jpg": "/Portfolio/static/media/paint_dancer.e21c574a808d721d1249.jpg",
+    "static/media/sketch_kid3.jpg": "/Portfolio/static/media/sketch_kid3.4b66662b05d0387682f9.jpg",
+    "static/media/sketch_kid1.jpg": "/Portfolio/static/media/sketch_kid1.42c47bf2f08ce420ed18.jpg",
+    "static/media/EmpDirectory.png": "/Portfolio/static/media/EmpDirectory.9e77277821c6d67c2b08.png",
+    "static/media/Bunny.png": "/Portfolio/static/media/Bunny.90f25cc605f4ba7b83af.png",
+    "static/media/sketch_kid2.jpg": "/Portfolio/static/media/sketch_kid2.73336fa7d9448caba271.jpg",
+    "static/media/FluidSim.png": "/Portfolio/static/media/FluidSim.0f534acced16ff1d3244.png",
+    "static/media/BezierCurve.png": "/Portfolio/static/media/BezierCurve.b72683a9496e72b78595.png",
+    "static/media/logo-white.svg": "/Portfolio/static/media/logo-white.1398359ffa4a05276b72b7194d7efd00.svg",
+    "index.html": "/Portfolio/index.html",
+    "main.34bdafe5.css.map": "/Portfolio/static/css/main.34bdafe5.css.map",
+    "main.26b86ad6.js.map": "/Portfolio/static/js/main.26b86ad6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34bdafe5.css",
+    "static/js/main.26b86ad6.js"
+  ]
+}
