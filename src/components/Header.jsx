@@ -47,18 +47,18 @@ export default function Header() {
           <ul>
             <li>
               <Link
-                to="/"
+                to="/Portfolio"
                 onClick={handleLinkClick}
-                style={{ textDecoration: location.pathname === '/' ? 'underline' : 'none' }}
+                style={{ textDecoration: location.pathname === '/Portfolio' ? 'underline' : 'none' }}
               >
                 Home
               </Link>
             </li>
             <li>
               <Link
-                to="/about"
+                to="/Portfolio/about"
                 onClick={handleLinkClick}
-                style={{ textDecoration: location.pathname === '/about' ? 'underline' : 'none' }}
+                style={{ textDecoration: location.pathname === '/Portfolio/about' ? 'underline' : 'none' }}
               >
                 About Me
               </Link>
