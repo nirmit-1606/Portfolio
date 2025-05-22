@@ -2,6 +2,9 @@
 
 This is a personal portfolio website built with **React.js**. It showcases my work in UX design, frontend development, computer graphics, and digital art.
 
+🟢 **Live Site:**  
+[https://nirmit-1606.github.io/Portfolio](https://nirmit-1606.github.io/Portfolio)
+
 ---
 
 ## 📁 Project Structure
@@ -68,6 +71,5 @@ This project is open-source and free to use. Feel free to customize it to your n
 
 ## 👋 Contact
 
-Created by [Nirmit Patel](mailto:nirmitpatel1606@gmail.com)
-
+Created by [Nirmit Patel](mailto:nirmitpatel1606@gmail.com) | 
 [LinkedIn](https://www.linkedin.com/in/nirmitpatel16/)
